@@ -18,8 +18,8 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent
 data_path = BASE_DIR / "data" / "events.csv"
 
-print("Looking for:", data_path)
-print("Exists:", data_path.exists())
+st.write("Checking:", data_path)
+st.write("Exists:", data_path.exists())
 df = pd.read_csv(data_path)
 try:
     df = data_processor.load_and_clean_data(data_path)
