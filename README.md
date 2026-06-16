@@ -63,7 +63,10 @@ Instead of just predicting traffic, Surge Sense serves as an automated GovTech C
     pip install -r requirements.txt
 3. **Launch the Intelligence Dashboard:**
     python -m streamlit run app.py
-📂 Project Structure
+
+
+
+**📂 Project Structure**
 ├── data/
 │   └── Astram_event_data_anonymized.csv  # Base spatial telemetry data
 ├── app.py                                # Main Streamlit Dashboard Application
