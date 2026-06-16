@@ -12,7 +12,7 @@ st.title("🚦 SURGE SENSE AI Event-Driven Congestion Intelligence")
 st.caption("Theme 2 Prototype: Forecasting traffic impact and automating optimal resource allocation.")
 
 # Load Data
-data_path = os.path.join("data", "Astram event data_anonymizedb40ac87.csv")
+data_path = os.path.join("data", "events.csv")
 try:
     df = data_processor.load_and_clean_data(data_path)
     data_loaded = True
