@@ -12,7 +12,14 @@ st.title("🚦 SURGE SENSE AI Event-Driven Congestion Intelligence")
 st.caption("Theme 2 Prototype: Forecasting traffic impact and automating optimal resource allocation.")
 
 # Load Data
-data_path = os.path.join("data","events.csv")
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
+data_path = BASE_DIR / "data" / "events.csv"
+
+print("Looking for:", data_path)
+print("Exists:", data_path.exists())
+df = pd.read_csv(data_path)
 try:
     df = data_processor.load_and_clean_data(data_path)
     data_loaded = True
