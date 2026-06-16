@@ -1,5 +1,6 @@
 import streamlit as st
 import folium
+import pandas as pd
 from streamlit_folium import st_folium
 import data_processor
 import model_engine
