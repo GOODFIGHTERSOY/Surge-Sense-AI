@@ -1,9 +1,11 @@
 import pandas as pd
 import numpy as np
+BASE_DIR = Path(__file__).resolve().parent
+DATA_FILE = BASE_DIR / "data" / "events.csv"
 
-def load_and_clean_data(file_path="data\\events.csv"):
+def load_and_clean_data(file_path=DATA_FILE):
     # Load the ASTraM dataset
-    df = pd.read_csv("data\\events.csv")
+    df = pd.read_csv(file_path)
     
     # Filter for event-driven causes relevant to Theme 2
     target_causes = [
