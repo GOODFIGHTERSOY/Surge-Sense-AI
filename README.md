@@ -66,11 +66,3 @@ Instead of just predicting traffic, Surge Sense serves as an automated GovTech C
 
 
 
-**📂 Project Structure**
-├── data/
-│   └── Astram_event_data_anonymized.csv  # Base spatial telemetry data
-├── app.py                                # Main Streamlit Dashboard Application
-├── data_processor.py                     # Cleaning and temporal feature extraction
-├── model_engine.py                       # Routing math and resource allocation formulas
-├── requirements.txt                      # Python dependencies
-└── README.md
